@@ -26,12 +26,10 @@ nav {
 
 .logo {
   text-decoration: none;
-  width: 50px;
 }
 
 .logo > img {
   vertical-align: middle;
-  width: inherit;
 }
 
 .search {

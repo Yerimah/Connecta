@@ -1,11 +1,15 @@
-import Nav from './components/Nav';
+import { Nav, Bio, Gallery } from './components';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
+    <>
+    <Nav />
+    <div className="container">
+    <Bio />
+    <Gallery />
     </div>
+    </>
   );
 }
 
