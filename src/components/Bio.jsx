@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Profile from '../assets/profileIcon.svg'
 
 const Bio = () => {
+  const [userDetails, setUserDetails] = useState({
+    name: 'Daniel Yerimah',
+    about: 'Building Dyv.io - Learn and Be more',
+  })
+
+  const updateUserDetails = (e) => {
+    e.preventDefault()
+    setUserDetails({
+      name: e.target.nameOfUser.value,
+      about: e.target.aboutUser.value,
+    })
+  }
+
     const editForm = (
-      <form>
-        <input type="text" id='' placeholder='Your name'/>
-        <input type="text" id='' placeholder='About you'/>
+      <form onSubmit={(event) => updateUserDetails(event)}>
+        <input type="text" id='' name="nameOfUser" placeholder='Your name'/>
+        <input type="text" id='' name="aboutUser" placeholder='About you'/>
         <br />
         <button type='button' className='cancel-button'>Cancel</button>
-        <button type='button' className='save-button'>Save</button>
+        <button type='submit'>Save</button>
       </form>
     )
   return (
@@ -17,8 +30,8 @@ const Bio = () => {
         <img src={Profile} alt="Profile Icon" />
       </div>
       <div className="profile-info">
-        <p className="name">Daniel Yerimah</p>
-        <p className="about">Building Dyv.io - Learn and Be more</p>
+        <p className="name">{userDetails.name}</p>
+        <p className="about">{userDetails.about}</p>
       </div>
       <button>Edit</button>
       {editForm}

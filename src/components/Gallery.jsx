@@ -14,19 +14,19 @@ const Gallery = () => {
 
       <section className="gallery">
         <div className="item">
-          <img src={Pexels4} className="item-image" alt='' />
+          <img src={Pexels4} className="item-image" alt='photo' />
           <button className="delete-button">Delete</button>
         </div>
         <div className="item">
-          <img src={Pexels5} className="item-image" alt='' />
+          <img src={Pexels5} className="item-image" alt='photo' />
           <button className="delete-button">Delete</button>
         </div>
         <div className="item">
-          <img src={Pexels6} className="item-image" alt='' />
+          <img src={Pexels6} className="item-image" alt='photo' />
           <button className="delete-button">Delete</button>
         </div>
         <div className="item">
-          <img src={Pexels7} className="item-image" alt='' />
+          <img src={Pexels7} className="item-image" alt='photo' />
           <button className="delete-button">Delete</button>
         </div>
       </section>
