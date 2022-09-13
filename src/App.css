@@ -122,10 +122,6 @@ nav {
   height: 2em;
 }
 
-.profile-info button:hover {
-  background-color: #0081d6;
-}
-
 .edit-bio-form input {
   width: 50%;
   height: 2em;
@@ -141,6 +137,10 @@ nav {
 
 .edit-bio-form .cancel-button {
   background-color: #890000;
+}
+
+.profile-info button:hover {
+  background-color: #0081d6;
 }
 
 #addPhotoInput {

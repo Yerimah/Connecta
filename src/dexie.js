@@ -1,7 +1,9 @@
-import Dexie from 'dexie'
+import Dexie from 'dexie';
 
-export const db = new Dexie('connecta')
+const db = new Dexie('connecta');
 db.version(1).stores({
-    bio: ',name,about',
-    gallery: '++id,url'
-})
+  bio: ',name,about',
+  gallery: '++id,url',
+});
+
+export default db;

@@ -24,6 +24,7 @@ const Gallery = () => {
       </label>
 
       <section className="gallery">
+        {!allPhotos && <p>Loading...</p>}
         {allPhotos?.map((photo) => (
           <div className="item" key={photo.id}>
            <img src={photo.url} className="item-image" alt='photo' />
