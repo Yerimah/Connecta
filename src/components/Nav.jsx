@@ -1,4 +1,4 @@
-import connectaLogo from '../assets/instagram.png'
+import connectaLogo from '../assets/ConLogo.png'
 
 const Nav = () => {
     return (
